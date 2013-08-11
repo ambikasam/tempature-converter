@@ -10,9 +10,9 @@
 
 @interface TemperatureViewController : UIViewController <UITextFieldDelegate>
 
-@property (nonatomic, strong) IBOutlet UITextField *fahrenheitTextField;
-@property (nonatomic, strong) IBOutlet UITextField *celsiusTextField;
-@property (nonatomic, strong) IBOutlet UIButton *convertButton;
+@property (nonatomic, weak) IBOutlet UITextField *fahrenheitTextField;
+@property (nonatomic, weak) IBOutlet UITextField *celsiusTextField;
+@property (nonatomic, weak) IBOutlet UIButton *convertButton;
 
 - (IBAction)onDoneButton;
 - (IBAction)convertButtonClick;
